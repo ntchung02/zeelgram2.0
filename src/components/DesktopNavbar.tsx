@@ -1,0 +1,12 @@
+import { currentUser } from "@clerk/nextjs/server"
+
+
+async function DesktopNavbar() {
+    const user = await currentUser();
+    console.log("user if here", user)
+  return (
+    <div>Mobilenavbar</div>
+  )
+}
+
+export default DesktopNavbar

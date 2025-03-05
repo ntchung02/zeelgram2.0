@@ -6,20 +6,20 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/ui/ModeToggle";
+import { ModeToggle } from "@/components/ModeToggle";
 
 export default function Home() {
   return (
     <div className="gap-5">
-      <SignedOut >
+      <SignedOut>
         <SignInButton mode="modal">
-        <Button> sign in</Button>
+          <Button> sign in</Button>
         </SignInButton>
       </SignedOut>
       <SignedIn>
         <UserButton />
       </SignedIn>
-      <ModeToggle/>
+      <ModeToggle />
     </div>
   );
 }
